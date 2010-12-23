@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Istodaywednesday::Application.config.session_store :cookie_store, :key => '_istodaywednesday_session'
+Istodaythursday::Application.config.session_store :cookie_store, :key => '_istodaythursday_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Istodaywednesday::Application.config.session_store :active_record_store
+# Istodaythursday::Application.config.session_store :active_record_store
