@@ -1,18 +1,18 @@
 !!! 5
 %html{:lang => "en"}
   %head
-    %title Is today Saturday?
+    %title Is today Sunday?
     = stylesheet_link_tag :all
 
   %body
-    %h1 Is today Saturday?
-    %p#result= Date.today.strftime("%A") == "Saturday" ? "Yes!" : "No"
-    %h2=Date.today.strftime("%A") == "Saturday" ? "Today is Saturday, a great day." : "Today is not Saturday, it's " << Date.today.strftime("%A").to_s << "."
+    %h1 Is today Sunday?
+    %p#result= Date.today.strftime("%A") == "Sunday" ? "Yes!" : "No"
+    %h2=Date.today.strftime("%A") == "Sunday" ? "Today is Sunday, a great day." : "Today is not Sunday, it's " << Date.today.strftime("%A").to_s << "."
       
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-5771210-1']);
-    _gaq.push(['_trackPageview', 'Is today Saturday?']);
+    _gaq.push(['_trackPageview', 'Is today Sunday?']);
     (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
