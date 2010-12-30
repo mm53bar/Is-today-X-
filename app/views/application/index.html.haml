@@ -7,7 +7,8 @@
   %body
     %h1 Is today Monday?
     %p#result= Date.today.strftime("%A") == "Monday" ? "Yes!" : "No"
-    
+    %h2=Date.today.strftime("%A") == "Monday" ? "Today is Monday, a great day." : "Today is not Monday, it's " << Date.today.strftime("%A").to_s << "."
+      
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-5771210-1']);
