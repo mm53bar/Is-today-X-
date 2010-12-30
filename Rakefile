@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Istodaythursday::Application.load_tasks
+Istodayfriday::Application.load_tasks
