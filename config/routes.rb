@@ -1,3 +1,3 @@
-Istodaytuesday::Application.routes.draw do
+Istodaywednesday::Application.routes.draw do
   root :to => "application#index"
 end
