@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
   end
   
   def index
+    @day = "Monday"
+    
     respond_to do |format|
         format.html
         format.xml
