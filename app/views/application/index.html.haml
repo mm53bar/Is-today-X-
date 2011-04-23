@@ -1,13 +1,13 @@
 !!! 5
 %html{:lang => "en"}
   %head
-    %title= @slugtitle
+    %title= @slug + " — What day is it today?"
     = stylesheet_link_tag :all
 
   %body
     %h1= @slug
     %p#result= Date.today.strftime("%A") == @day ? "Yes!" : "No"
-    %h2=Date.today.strftime("%A") == @day ? "Today is " << @day << ", a great day." : "Today is not " << @day << ", it's " << Date.today.strftime("%A").to_s << "."
+    %h2=Date.today.strftime("%A") == @day ? "Today is " + @day + ", a great day." : "Today is not " + @day + ", it's " + Date.today.strftime("%A").to_s + "."
       
     :javascript
       var _gaq = _gaq || [];
