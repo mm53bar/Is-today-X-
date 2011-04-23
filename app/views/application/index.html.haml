@@ -5,10 +5,10 @@
     = stylesheet_link_tag :all
 
   %body
-    %h1= @slug
+    #block
+      %h1= @slug
+      %h2=Date.today.strftime("%A") == @day ? "Today is #{@day}, a great day." : "Today is not #{@day}, it's " + Date.today.strftime("%A").to_s + "."
     %p#result= Date.today.strftime("%A") == @day ? "Yes!" : "No"
-    %h2=Date.today.strftime("%A") == @day ? "Today is #{@day}, a great day." : "Today is not #{@day}, it's " + Date.today.strftime("%A").to_s + "."
-
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-5771210-1']);
