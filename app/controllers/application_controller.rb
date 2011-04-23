@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
   
   def index
-    @day = "Friday"
+    @day = "Saturday"
     @slug = "Is today " + @day + "?"
     
     respond_to do |format|
