@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   
   def index
     @day = "Saturday"
+    @slug = "Is today " << @day << "?"
     
     respond_to do |format|
         format.html
