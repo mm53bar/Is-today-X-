@@ -8,8 +8,13 @@ class ApplicationController < ActionController::Base
     Time.zone = 'Mountain Time (US & Canada)'
   end
   
+  def get_host
+    hostday = request.host
+    hostday == "localhost" ? "Sunday" : hostday.gsub(/istoday/,"").gsub!(/.heroku.com/,"").capitalize.to_s
+  end
+  
   def index
-    @day = "Sunday"
+    @day = get_host
     @slug = "Is today " + @day + "?"
     
     respond_to do |format|
