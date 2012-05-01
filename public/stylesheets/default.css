@@ -1,0 +1,16 @@
+html { height: 100%; }
+body {
+  background-color: #434950;
+  background-image: -webkit-gradient(radial, 100% 100%,100,-50% -50%,100, from(#16191c), to(#434950));
+  background-image: -webkit-radial-gradient(0% 0%, #434950, #16191c);
+  background-image: -moz-radial-gradient(0% 0%, #434950, #16191c);
+  background-image: -o-radial-gradient(0% 0%, #434950, #16191c);
+  background-image: -ms-radial-gradient(0% 0%, #434950, #16191c);
+  background-image: radial-gradient(0% 0%, #434950, #16191c);
+
+  color:#FFF; font-family: Helvetica, Arial, sans-serif; margin: 40px; padding: 0px; line-height: 1em;}
+#block {position: absolute; z-index: 2;}
+h1, h2 {color: #FFF; font-weight: bold; text-shadow:#171a1d 0 0 20px; margin: 0px 0px 8px 0px; padding: 0px; display:block;}
+h1 {font-size:2em; font-style:italic;}
+h2 {font-size:1em; text-transform: uppercase;}
+#result {position: absolute; left: -20px; top: -600px; font-size:28em; font-weight:bold; line-height: 1em; text-shadow:#171a1d 0 0 25px; text-transform: lowercase; opacity: 0.35; z-index: 1;}

@@ -1,12 +1,13 @@
 !!! 5
 %html{:lang => "en"}
   %head
-    %title= @slug + " — What day is it today?"
-    = stylesheet_link_tag :all
+    %title= "#{@slug} — What day is it today?"
+    %meta{name: "description", content: "#{@slug} #{info}"}
+    %link{"rel" => "stylesheet", "href" => "/stylesheets/#{stylesheet_mood}.css", "type" => "text/css"}
 
   %body
     #block
       %h1= @slug
       %h2= info
     %p#result= result
-    = render :partial => "analytics"
+    = render "analytics", :day => @day

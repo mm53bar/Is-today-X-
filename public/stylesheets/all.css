@@ -1,6 +1,0 @@
-body {background-color:#434950; color:#FFF; font-family: Helvetica, Arial, sans-serif; margin: 40px; padding: 0px; line-height: 1em;}
-#block {position: absolute; z-index: 2;}
-h1, h2 {color: #FFF; font-weight: bold; text-shadow:#000 0 0 3px; margin: 0px 0px 8px 0px; padding: 0px; display:block;}
-h1 {font-size:2em; font-style:italic;}
-h2 {font-size:1em; text-transform: uppercase;}
-#result {position: absolute; left: -20px; top: -600px; font-size:28em; font-weight:bold; line-height: 1em; text-shadow:#111 0 0 10px; text-transform: lowercase; opacity: 0.3; z-index: 1;}
