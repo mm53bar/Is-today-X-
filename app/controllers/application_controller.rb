@@ -10,12 +10,12 @@ class ApplicationController < ActionController::Base
   end
 
   def get_host
-    hostday = request.host
-    hostday == "localhost" ? "Sunday" : strip_hostname
+    request.host == "localhost" ? "Sunday" : strip_hostname
   end
 
   def strip_hostname
-    hostday.gsub(/istoday/,"").gsub!(/.heroku.com/,"").capitalize.to_s
+    hostname = request.host
+    hostname.gsub(/istoday/,"").gsub!(/.heroku.com/,"").capitalize.to_s
   end
 
   def index
