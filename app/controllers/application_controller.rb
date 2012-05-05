@@ -21,7 +21,6 @@ class ApplicationController < ActionController::Base
   def index
     @day = get_host
     @slug = "Is today " + @day + "?"
-    meter = Metriks.meter("IsToday#{@day}")
-    meter.mark
+    Metriks.meter("IsToday#{@day}").mark
   end
 end
