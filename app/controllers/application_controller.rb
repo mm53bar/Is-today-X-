@@ -22,5 +22,10 @@ class ApplicationController < ActionController::Base
     @day = get_host
     @slug = "Is today " + @day + "?"
     Metriks.meter("IsToday#{@day}").mark
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render }
+    end
   end
 end

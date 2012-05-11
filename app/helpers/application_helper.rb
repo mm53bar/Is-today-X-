@@ -16,6 +16,10 @@ module ApplicationHelper
     Date.today.strftime("%A") == @day ? "Yes!" : "No"
   end
 
+  def result_tf
+    Date.today.strftime("%A") == @day ? true : false
+  end
+
   def stylesheet_mood
     result == "No" ? "default" : "sunny"
   end
